@@ -19,6 +19,14 @@
 		7EB4AFF51527EC010011F2FE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB4AFF41527EC010011F2FE /* MainStoryboard.storyboard */; };
 		7EB4AFF81527ECBF0011F2FE /* SGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */; };
 		7EB4AFFA1527F1640011F2FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7EB4AFF91527F1640011F2FE /* README.md */; };
+		7EB83429152912A200510DB7 /* SGGSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB83428152912A200510DB7 /* SGGSprite.m */; };
+		7EB834411529135B00510DB7 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343A1529135B00510DB7 /* background-music-aac.caf */; };
+		7EB834421529135B00510DB7 /* pew-pew.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343B1529135B00510DB7 /* pew-pew.wav */; };
+		7EB834431529135B00510DB7 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343C1529135B00510DB7 /* Player.png */; };
+		7EB834441529135B00510DB7 /* Projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343D1529135B00510DB7 /* Projectile.png */; };
+		7EB834451529135B00510DB7 /* Target.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343E1529135B00510DB7 /* Target.png */; };
+		7EB834461529135B00510DB7 /* YouLose.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB8343F1529135B00510DB7 /* YouLose.png */; };
+		7EB834471529135B00510DB7 /* YouWin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB834401529135B00510DB7 /* YouWin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,15 @@
 		7EB4AFF61527ECBF0011F2FE /* SGGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGViewController.h; sourceTree = "<group>"; };
 		7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGViewController.m; sourceTree = "<group>"; };
 		7EB4AFF91527F1640011F2FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7EB83427152912A200510DB7 /* SGGSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGSprite.h; sourceTree = "<group>"; };
+		7EB83428152912A200510DB7 /* SGGSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGSprite.m; sourceTree = "<group>"; };
+		7EB8343A1529135B00510DB7 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		7EB8343B1529135B00510DB7 /* pew-pew.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pew-pew.wav"; sourceTree = "<group>"; };
+		7EB8343C1529135B00510DB7 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		7EB8343D1529135B00510DB7 /* Projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Projectile.png; sourceTree = "<group>"; };
+		7EB8343E1529135B00510DB7 /* Target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Target.png; sourceTree = "<group>"; };
+		7EB8343F1529135B00510DB7 /* YouLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLose.png; sourceTree = "<group>"; };
+		7EB834401529135B00510DB7 /* YouWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouWin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +78,7 @@
 		7EB4AFC81527EB6E0011F2FE = {
 			isa = PBXGroup;
 			children = (
+				7EB834391529135B00510DB7 /* SGGResources */,
 				7EB4AFF91527F1640011F2FE /* README.md */,
 				7EB4AFF61527ECBF0011F2FE /* SGGViewController.h */,
 				7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */,
@@ -98,6 +116,8 @@
 				7EB4AFE61527EB6F0011F2FE /* SGGAppDelegate.h */,
 				7EB4AFE71527EB6F0011F2FE /* SGGAppDelegate.m */,
 				7EB4AFDE1527EB6E0011F2FE /* Supporting Files */,
+				7EB83427152912A200510DB7 /* SGGSprite.h */,
+				7EB83428152912A200510DB7 /* SGGSprite.m */,
 			);
 			path = SimpleGLKitGame;
 			sourceTree = "<group>";
@@ -111,6 +131,21 @@
 				7EB4AFE51527EB6F0011F2FE /* SimpleGLKitGame-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EB834391529135B00510DB7 /* SGGResources */ = {
+			isa = PBXGroup;
+			children = (
+				7EB8343A1529135B00510DB7 /* background-music-aac.caf */,
+				7EB8343B1529135B00510DB7 /* pew-pew.wav */,
+				7EB8343C1529135B00510DB7 /* Player.png */,
+				7EB8343D1529135B00510DB7 /* Projectile.png */,
+				7EB8343E1529135B00510DB7 /* Target.png */,
+				7EB8343F1529135B00510DB7 /* YouLose.png */,
+				7EB834401529135B00510DB7 /* YouWin.png */,
+			);
+			name = SGGResources;
+			path = SimpleGLKitGame/SGGResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +201,13 @@
 				7EB4AFE21527EB6E0011F2FE /* InfoPlist.strings in Resources */,
 				7EB4AFF51527EC010011F2FE /* MainStoryboard.storyboard in Resources */,
 				7EB4AFFA1527F1640011F2FE /* README.md in Resources */,
+				7EB834411529135B00510DB7 /* background-music-aac.caf in Resources */,
+				7EB834421529135B00510DB7 /* pew-pew.wav in Resources */,
+				7EB834431529135B00510DB7 /* Player.png in Resources */,
+				7EB834441529135B00510DB7 /* Projectile.png in Resources */,
+				7EB834451529135B00510DB7 /* Target.png in Resources */,
+				7EB834461529135B00510DB7 /* YouLose.png in Resources */,
+				7EB834471529135B00510DB7 /* YouWin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +221,7 @@
 				7EB4AFE41527EB6F0011F2FE /* main.m in Sources */,
 				7EB4AFE81527EB6F0011F2FE /* SGGAppDelegate.m in Sources */,
 				7EB4AFF81527ECBF0011F2FE /* SGGViewController.m in Sources */,
+				7EB83429152912A200510DB7 /* SGGSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +325,7 @@
 				7EB4AFED1527EB6F0011F2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
