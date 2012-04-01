@@ -13,6 +13,11 @@
 		7EB4AFE21527EB6E0011F2FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EB4AFE01527EB6E0011F2FE /* InfoPlist.strings */; };
 		7EB4AFE41527EB6F0011F2FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4AFE31527EB6F0011F2FE /* main.m */; };
 		7EB4AFE81527EB6F0011F2FE /* SGGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4AFE71527EB6F0011F2FE /* SGGAppDelegate.m */; };
+		7EB4AFEF1527EBA60011F2FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4AFEE1527EBA60011F2FE /* QuartzCore.framework */; };
+		7EB4AFF11527EBB30011F2FE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4AFF01527EBB30011F2FE /* OpenGLES.framework */; };
+		7EB4AFF31527EBBD0011F2FE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4AFF21527EBBD0011F2FE /* GLKit.framework */; };
+		7EB4AFF51527EC010011F2FE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB4AFF41527EC010011F2FE /* MainStoryboard.storyboard */; };
+		7EB4AFF81527ECBF0011F2FE /* SGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,18 @@
 		7EB4AFD71527EB6E0011F2FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7EB4AFD91527EB6E0011F2FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7EB4AFDB1527EB6E0011F2FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7EB4AFDF1527EB6E0011F2FE /* SimpleGLKitGame-Info.plist */ = {isa = PBXFileReference; path = "SimpleGLKitGame-Info.plist"; sourceTree = "<group>"; };
+		7EB4AFDF1527EB6E0011F2FE /* SimpleGLKitGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleGLKitGame-Info.plist"; sourceTree = "<group>"; };
 		7EB4AFE11527EB6E0011F2FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7EB4AFE31527EB6F0011F2FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7EB4AFE51527EB6F0011F2FE /* SimpleGLKitGame-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleGLKitGame-Prefix.pch"; sourceTree = "<group>"; };
-		7EB4AFE61527EB6F0011F2FE /* SGGAppDelegate.h */ = {isa = PBXFileReference; path = SGGAppDelegate.h; sourceTree = "<group>"; };
+		7EB4AFE51527EB6F0011F2FE /* SimpleGLKitGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleGLKitGame-Prefix.pch"; sourceTree = "<group>"; };
+		7EB4AFE61527EB6F0011F2FE /* SGGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGGAppDelegate.h; sourceTree = "<group>"; };
 		7EB4AFE71527EB6F0011F2FE /* SGGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGGAppDelegate.m; sourceTree = "<group>"; };
+		7EB4AFEE1527EBA60011F2FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7EB4AFF01527EBB30011F2FE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7EB4AFF21527EBBD0011F2FE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7EB4AFF41527EC010011F2FE /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7EB4AFF61527ECBF0011F2FE /* SGGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGViewController.h; sourceTree = "<group>"; };
+		7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB4AFF31527EBBD0011F2FE /* GLKit.framework in Frameworks */,
+				7EB4AFF11527EBB30011F2FE /* OpenGLES.framework in Frameworks */,
+				7EB4AFEF1527EBA60011F2FE /* QuartzCore.framework in Frameworks */,
 				7EB4AFD81527EB6E0011F2FE /* UIKit.framework in Frameworks */,
 				7EB4AFDA1527EB6E0011F2FE /* Foundation.framework in Frameworks */,
 				7EB4AFDC1527EB6E0011F2FE /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +59,12 @@
 		7EB4AFC81527EB6E0011F2FE = {
 			isa = PBXGroup;
 			children = (
+				7EB4AFF61527ECBF0011F2FE /* SGGViewController.h */,
+				7EB4AFF71527ECBF0011F2FE /* SGGViewController.m */,
+				7EB4AFF41527EC010011F2FE /* MainStoryboard.storyboard */,
+				7EB4AFF21527EBBD0011F2FE /* GLKit.framework */,
+				7EB4AFF01527EBB30011F2FE /* OpenGLES.framework */,
+				7EB4AFEE1527EBA60011F2FE /* QuartzCore.framework */,
 				7EB4AFDD1527EB6E0011F2FE /* SimpleGLKitGame */,
 				7EB4AFD61527EB6E0011F2FE /* Frameworks */,
 				7EB4AFD41527EB6E0011F2FE /* Products */,
@@ -141,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB4AFE21527EB6E0011F2FE /* InfoPlist.strings in Resources */,
+				7EB4AFF51527EC010011F2FE /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +174,7 @@
 			files = (
 				7EB4AFE41527EB6F0011F2FE /* main.m in Sources */,
 				7EB4AFE81527EB6F0011F2FE /* SGGAppDelegate.m in Sources */,
+				7EB4AFF81527ECBF0011F2FE /* SGGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
