@@ -50,7 +50,7 @@
     
     self.children = [NSMutableArray array];
     [self.children addObject:self.player];    
-    self.player.moveVelocity = GLKVector2Make(50, 50);
+    //self.player.moveVelocity = GLKVector2Make(50, 50);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -71,7 +71,31 @@
     }
 }
 
-- (void)update {       
+- (void)addTarget {
+    SGGSprite * target = [[SGGSprite alloc] initWithFile:@"Target.png" effect:self.effect];
+    [self.children addObject:target];
+    
+    int minY = target.contentSize.height/2;
+    int maxY = 320 - target.contentSize.height/2;
+    int rangeY = maxY - minY;
+    int actualY = (arc4random() % rangeY) + minY;
+    
+    target.position = GLKVector2Make(480 + (target.contentSize.width/2), actualY);    
+    
+    int minVelocity = 480.0/4.0;
+    int maxVelocity = 480.0/2.0;
+    int rangeVelocity = maxVelocity - minVelocity;
+    int actualVelocity = (arc4random() % rangeVelocity) + minVelocity;
+    
+    target.moveVelocity = GLKVector2Make(-actualVelocity, 0);             
+}
+
+- (void)update {
+    self.timeSinceLastSpawn += self.timeSinceLastUpdate;
+    if (self.timeSinceLastSpawn > 1.0) {
+        self.timeSinceLastSpawn = 0;
+        [self addTarget];
+    }
     for (SGGSprite * sprite in self.children) {
         [sprite update:self.timeSinceLastUpdate];
     }
