@@ -40,7 +40,9 @@
     GLKMatrix4 projectionMatrix = GLKMatrix4MakeOrtho(0, 480, 0, 320, -1024, 1024);
     self.effect.transform.projectionMatrix = projectionMatrix;
     
-    self.player = [[SGGSprite alloc] initWithFile:@"Player.png" effect:self.effect]; 
+    self.player = [[SGGSprite alloc] initWithFile:@"Player.png" effect:self.effect];
+
+    self.player.position = GLKVector2Make(0, 160);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
