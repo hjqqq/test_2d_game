@@ -34,6 +34,7 @@ typedef struct {
 @synthesize textureInfo = _textureInfo;
 @synthesize position = _position;
 @synthesize contentSize = _contentSize;
+@synthesize moveVelocity = _moveVelocity;
 
 - (id)initWithFile:(NSString *)fileName effect:(GLKBaseEffect *)effect {
     if ((self = [super init])) {  
@@ -79,7 +80,7 @@ typedef struct {
     
     GLKMatrix4 modelMatrix = GLKMatrix4Identity;    
     modelMatrix = GLKMatrix4Translate(modelMatrix, self.position.x, self.position.y, 0);
-    //modelMatrix = GLKMatrix4Translate(modelMatrix, -self.contentSize.width/2, -self.contentSize.height/2, 0);
+    modelMatrix = GLKMatrix4Translate(modelMatrix, -self.contentSize.width/2, -self.contentSize.height/2, 0);
     return modelMatrix;
     
 }
@@ -107,6 +108,11 @@ typedef struct {
     // 5    
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
+}
+
+- (void)update:(float)dt {
+    GLKVector2 curMove = GLKVector2MultiplyScalar(self.moveVelocity, dt);
+    self.position = GLKVector2Add(self.position, curMove);    
 }
 
 @end
